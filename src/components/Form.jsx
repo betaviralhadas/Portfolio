@@ -19,7 +19,7 @@ const Form = () => {
                     <label htmlFor="message">Message</label>
                     <input type="text" />
                 </div>
-                
+                <button type="submit">Send</button>
             </form>
         </div>
     )

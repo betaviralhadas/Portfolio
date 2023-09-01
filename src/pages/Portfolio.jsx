@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Skills from "../components/Skills";
 import Cards from "../components/Cards";
 import Form from "../components/Form";
+import '../style/Page/_Portfolio.scss';
 
 
 const Portfolio = () => {
@@ -13,11 +14,10 @@ const Portfolio = () => {
             <main>
                 {<AboutMe />}
                 {<Skills />}
-                <div id="projects">
-                    <h3>Projects</h3>
-                    <h4>Search</h4>
+                <section id="projects">
+                    <h2>Projects</h2>
                     {<Cards />}
-                </div>
+                </section>
                 {<Form />}
             </main>
         </>
