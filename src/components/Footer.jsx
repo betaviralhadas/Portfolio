@@ -1,12 +1,13 @@
 import React from "react";
+import "../style/Components/_Footer.scss";
 
 const Footer = () => {
     return(
-        <div>
+        <div className="content_footer">
             <button>
                 <a href="#top" title="top"><i className="fa-solid fa-angle-up"></i></a>
             </button>
-            <article>
+            <article className="footer_links">
                 <a href="https://github.com/betaviralhadas" 
                     target="_blank" 
                     rel="noopener noreferrer">
@@ -18,7 +19,7 @@ const Footer = () => {
                     <i className="fa-brands fa-linkedin-in"></i>
                 </a>
             </article>
-            <article>
+            <article className="footer_text">
                 <i className="fa-regular fa-copyright"></i>
                 <p>Copyright 2023. Made by Elisabete Viralhadas</p>
             </article>   

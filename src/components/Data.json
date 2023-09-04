@@ -2,56 +2,57 @@
     {
         "id": 1,
         "title": "Booki",
-        "description": "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Pour realiser le project j´ai utilise les langages html5 et css3",
-        "gitHubLink": "https://github.com/betaviralhadas/Booki.git"
+        "description": "Booki is a travel agency, that wishes to develop a website that allows users to find accommodation and activities, in the city of their choice. To carry out the project, I used HTML5 and CSS3 languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/Booki.git",
+        "coverImage": "/projectsImg/1.jpg"
     },
-
     {
         "id": 2,
         "title": "Ohmyfood",
-        "description": "Votre mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. html, css,sass ",
-        "gitHubLink": "https://github.com/betaviralhadas/Ohmyfood.git"
+        "description": "The OhMyFood platform, wants to develop a “mobile first” site, which lists the menus of gourmet restaurants. In addition to traditional reservation systems, customers will be able to compose the menu for their meal so that the dishes are ready upon their arrival. To carry out the project, I used HTML5 and Sass languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/Ohmyfood.git",
+        "coverImage": "/projectsImg/1.jpg"
     },
-
     {
         "id": 3,
         "title": "Print it",
-        "description": "mission de dynamiser le site Internet statique d’une petite imprimerie familiale nommée Print it. html,css, js",
-        "gitHubLink": "https://github.com/betaviralhadas/costa_elisabete_2_012023.git" 
+        "description": "Print it a small family printing company, wants to revitalize its static website by adding a carousel. To carry out the project, I used HTML5, CSS3 and JavaScript languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/costa_elisabete_2_012023.git",
+        "coverImage": "/projectsImg/1.jpg"
     },
-
     {
         "id": 4,
-        "title": "Architecte d'intérieur",
-        "description": "conception du site portfolio d’une architecte d’intérieur. html,css,js",
-        "gitHubLink": "https://github.com/betaviralhadas/costa_elisabete_6_repo_github_022023.git"
+        "title": "Sophie Bluel",
+        "description": "Sophie Bluel, an interior designer, wants a dynamic portfolio site. To carry out the project, I used HTML5, CSS3 and JavaScript languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/costa_elisabete_6_repo_github_022023.git",
+        "coverImage": "/projectsImg/1.jpg"
     },
-
     {
         "id": 5,
         "title": "Kasa",
-        "description": "Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France. js,react, sass",
-        "gitHubLink": "https://github.com/betaviralhadas/kasa.git"
+        "description": "Kasa is one of the leaders in private apartment rental in France. The project was to develop its new web platform. To carry out the project, I used JavaScript, React ans Sass languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/kasa.git",
+        "coverImage": "/projectsImg/1.jpg"
     },
-
     {
         "id": 6,
-        "title": "ninacarducci",
-        "description": "services d’optimisation SEO. tools lighthouse, wave",
-        "gitHubLink": "https://github.com/betaviralhadas/ninacarducci.git"
+        "title": "Nina Carducci",
+        "description": "Nina Carducci, a photographer, wants SEO optimization services, to have more visibility for potential clients. To carry out this project, I used the lighthouse and wave tools.",
+        "gitHubLink": "https://github.com/betaviralhadas/ninacarducci.git",
+        "coverImage": "/projectsImg/1.jpg"
     },
-
     {
         "id": 7,
         "title": "724events",
-        "description": "corriger bugs du site de lagence et teste integrations. react,js. tools react dev tools",
-        "gitHubLink": "https://github.com/betaviralhadas/724Events-Debuggez-app-React.JS.git"
+        "description": "The events agency 724events, wants to debug the new version of its showcase site. To carry out this project, I used JavaScript and React languages and the react dev tools.",
+        "gitHubLink": "https://github.com/betaviralhadas/724Events-Debuggez-app-React.JS.git",
+        "coverImage": "/projectsImg/1.jpg"
     },
-
     {
         "id": 8,
         "title": "Argent Bank",
-        "description": "Argent Bank est une nouvelle banque en ligne qui souhaite percer dans le secteur bancaire. mission mise en place du tableau de bord des utilisateurs. react, js, redux,css",
-        "gitHubLink": "https://github.com/betaviralhadas/argentbankfront.git"
+        "description": "Argent Bank is a new online bank, which wants to break into the banking sector. Wants to set up the user dashboard. To carry out this project, I used JavaScript, React, Redux and CSS.",
+        "gitHubLink": "https://github.com/betaviralhadas/argentbankfront.git",
+        "coverImage": "/projectsImg/1.jpg"
     }
 ]

@@ -1,0 +1,15 @@
+.content_footer {
+    width: 100%;
+    background: darkcyan;
+
+    .footer_links {
+
+    }
+
+    .footer_text {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 10px;
+    }
+}
