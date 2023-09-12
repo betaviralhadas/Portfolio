@@ -7,25 +7,23 @@ import '../style/Components/_Cards.scss';
 
 const Cards = () => {
     return (
-        <section className="cards">
-             <div>
+        <section>
+            <div className="cards">
                 {data.map((project) => (
                     <Modal key={project.id} content={<ContentModal project={project} />}>
-                        {({setisOpened}) => (
+                        {({ setisOpened }) => (
                             <div className="card" key={project.id} onClick={() => setisOpened(true)}>
-                            <img
-                                className="card_img"
-                                src={project.coverImage}
-                                alt="logo"
-                            />
-                            <h3>{project.title}</h3>
-                        </div>
+                                <img
+                                    className="card_img"
+                                    src={project.coverImage}
+                                    alt="logo"
+                                />
+                                <h3>{project.title}</h3>
+                            </div>
                         )}
-                    
                     </Modal>
                 ))}
             </div>
-            
         </section>
     )
 }

@@ -5,6 +5,7 @@ import Skills from "../components/Skills";
 import Cards from "../components/Cards";
 import Form from "../components/Form";
 import '../style/Page/_Portfolio.scss';
+import Modal from "../containers/Modal";
 
 
 const Portfolio = () => {
@@ -15,10 +16,21 @@ const Portfolio = () => {
                 {<AboutMe />}
                 {<Skills />}
                 <section id="projects">
+
                     <h2>Projects</h2>
                     {<Cards />}
                 </section>
-                {<Form />}
+                <Modal 
+                content={
+                    <div>
+                        <h3>messagem enviada</h3>
+                        
+                    </div>
+                }>
+                    {({ setisOpened }) => (
+                    <Form onSuccess={()=> setisOpened(true)} />)}
+                </Modal>
+                
             </main>
         </>
     )

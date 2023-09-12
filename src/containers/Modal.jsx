@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import PropType from "prop-types";
+import '../style/containers/_ContentModal.scss';
 
 const Modal = ({opened, content, children}) => {
     const [isOpened, setisOpened] = useState(opened);
@@ -13,13 +14,9 @@ const Modal = ({opened, content, children}) => {
                 isOpened && (
                     <div>
                         <div>
-                            <div>
-                                
-                                <button
-                                onClick={() => setisOpened(false)}>
-                                    X</button>
-                                    {content}
-
+                            <div className="modal_window">
+                                <button className="close_modal" onClick={() => setisOpened(false)}>X</button>
+                                {content}
                             </div>
                         </div>
                     </div>

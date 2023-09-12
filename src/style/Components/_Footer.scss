@@ -1,9 +1,39 @@
 .content_footer {
     width: 100%;
     background: darkcyan;
+    color: white;
+
+    .top_button {
+        position: relative;
+        left: 47%;
+        top: -23px;
+        border-radius: 50%;
+        border: 0 solid;
+        background: darkcyan;
+        width: 70px;
+        height: 60px;
+        text-align: center;
+
+        :hover {
+            background-color: bisque;
+            transition: background-color 0.5s;
+            
+        }
+
+        a {
+            color: white;
+            font-size: xx-large;
+        }
+    }
 
     .footer_links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
 
+        a {
+            color: white;
+        }
     }
 
     .footer_text {

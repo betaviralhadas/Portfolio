@@ -1,17 +1,18 @@
 import PropType from "prop-types";
+import '../style/containers/_ContentModal.scss';
 
 const ContentModal = ({project}) => {
     return(
-        <div>
-            <div>
+        <div className="modal_content">
+            <div className="modal_image">
                 <img src={project.coverImage} alt={project.title} />
             </div>
-            <div>
+            <div className="modal_description">
                 <h2>Description</h2>
-                <div>
+                <div className="description_text">
                     {project.description}
                 </div>
-                <button onClick={()=> window.open(project.gitHubLink,"_blank")}>
+                <button className="button_github" onClick={()=> window.open(project.gitHubLink,"_blank")}>
                     See the code
                 </button>
             </div>

@@ -4,7 +4,7 @@ import "../style/Components/_Footer.scss";
 const Footer = () => {
     return(
         <div className="content_footer">
-            <button>
+            <button className="top_button">
                 <a href="#top" title="top"><i className="fa-solid fa-angle-up"></i></a>
             </button>
             <article className="footer_links">
