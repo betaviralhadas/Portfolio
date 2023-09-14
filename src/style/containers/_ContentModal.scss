@@ -1,14 +1,19 @@
 .modal_window {
+    z-index: 1;
     position: absolute;
-    width: 60%;
+    width: 652px;
     border-radius: 15px;
     background: blue;
-
+    left: 25%;
 
     .close_modal {
         position: absolute;
         right: 10px;
         top: 10px;
+        border: 0 solid;
+        background: blue;
+        font-size: unset;
+        color: white;
     }
 
     .modal_content {
