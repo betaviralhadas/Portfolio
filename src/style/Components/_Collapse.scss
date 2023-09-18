@@ -1,7 +1,8 @@
 .collapse {
-    margin: 45px 0 45px 0;
+    padding: 45px 0 45px 0;
 
     .collapse-header {
+        cursor: pointer;
         display: flex;
         justify-content: space-evenly;
         gap: 20px;

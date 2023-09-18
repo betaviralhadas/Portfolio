@@ -18,7 +18,10 @@ const Cards = () => {
                                     src={project.coverImage}
                                     alt="logo"
                                 />
-                                <h3>{project.title}</h3>
+                                <div className="card_text">
+                                    <h3 className="title">{project.title}</h3>
+                                    <span className="hover_text">Project<i class="fa-solid fa-arrow-right-long"></i></span>
+                                </div>
                             </div>
                         )}
                     </Modal>

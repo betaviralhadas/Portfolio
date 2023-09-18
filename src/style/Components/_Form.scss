@@ -1,100 +1,132 @@
-:root{
-    --main-color: #00abf0;
-  }
+:root {
+  --main-color: #00abf0;
+}
 
 #contact {
-    margin: 20px;
-    padding: 1px 5px 20px 20px;
-    width: 30%;
-    background: darkgray;
-    border-radius: 25px;
+  margin: 45px 0 56px 0;
+  width: 100%;
+  background: radial-gradient(black, transparent);
+ 
 
-    .form_title {
-        font-size: 36px;
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke: .7px var(--main-color);
-  background-image: linear-gradient(var(--main-color), var(--main-color));
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  background-position: -35rem 0;
-  animation: homeBgText 6s linear infinite;
-  animation-delay: 2s;
-  position: relative;
-  width: 34.8rem;
-    }
-    .form_title::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        
-        
-        height: 100%;
-        border-right: 2px solid var(--main-color);
-        z-index: -1;
-        animation: homeCursorText 6s linear infinite;
-        animation-delay: 2s;
+  .form_title {
+    margin-left: 131px;
+    font-size: 36px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -35rem 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+    position: relative;
+    width: 34.8rem;
+  }
+
+  .form_title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 2s;
+  }
+
+  h3 {
+    margin-left: 179px;
+  }
+
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 35px;
+
+
+    .form_fields {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      line-height: 30px;
+      color: deepskyblue;
+      font-weight: 700;
+      font-size: 20px;
+
+      input {
+        border-radius: 6px;
+        height: 20px;
       }
 
-
-    .form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        
-
-
-        .form_fields {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            line-height: 30px;
-
-            input {
-                border-radius: 6px;
-                height: 20px;
-            }
-        }
-
-        .form_message_field {
-            display: flex;
-            flex-direction: column;
-            width: 60%;
-            line-height: 30px;
-
-            input {
-                border-radius: 6px;
-                height: 95px;
-            }
-        }
-
-        .button {
-            width: 50px;
-            border-radius: 8px;
-        }
+      .error {
+        color: red;
+        font-size: 14px;
+    font-weight: 500;
+      }
     }
+
+    .form_message_field {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      line-height: 30px;
+      color: deepskyblue;
+      font-weight: 700;
+      font-size: 20px;
+
+      input {
+        border-radius: 6px;
+        height: 95px;
+      }
+    }
+
+    .button {
+      cursor: pointer;
+      width: 50px;
+      border-radius: 8px;
+    }
+  }
 }
 
 
 @keyframes homeCursorText {
-    0%,10%,100%{
-      width: 0;
-    }
-    65%,78%,85%{
-     width: 100%;
-     opacity: 1;
-    }
-    75%,81%{
-      opacity: 0;
-    }
+
+  0%,
+  10%,
+  100% {
+    width: 0;
   }
 
-  @keyframes homeBgText {
-    0%,10%,100%{
-      background-position: -35rem 0;
-    }
-    65%,85%{
-      background-position: 0 0;
-    }
+  65%,
+  78%,
+  85% {
+    width: 100%;
+    opacity: 1;
   }
+
+  75%,
+  81% {
+    opacity: 0;
+  }
+}
+
+@keyframes homeBgText {
+
+  0%,
+  10%,
+  100% {
+    background-position: -35rem 0;
+  }
+
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}

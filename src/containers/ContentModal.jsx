@@ -5,7 +5,7 @@ const ContentModal = ({project}) => {
     return(
         <div className="modal_content">
             <div className="modal_image">
-                <img src={project.coverImage} alt={project.title} />
+                <img src={project.image} alt={project.title} />
             </div>
             <div className="modal_description">
                 <h2>Description</h2>

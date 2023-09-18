@@ -1,7 +1,7 @@
 #top {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    padding: 20px;
 
     .name_photo {
         display: flex;
@@ -31,7 +31,7 @@
             font-weight: 600;
 
             :hover {
-                color: red;
+                color: #66d9ed;;
             }
 
             a {

@@ -64,9 +64,9 @@ const Slider = () => {
           swipeable
           
         >
-          {data.map(donnee => (
-            <div id="skills" className="content_skills" key={donnee.title}>
-              <img className="icon_skill" src={donnee.image} alt="skills" />
+          {data.map(item => (
+            <div id="skills" className="content_skills skills" key={item.id}>
+              <img className="icon_skill" src={item.image} alt="skills" />
             </div>
           ))}
         </Carousel>
