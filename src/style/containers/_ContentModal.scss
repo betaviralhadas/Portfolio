@@ -23,7 +23,13 @@
         padding: 10px;
 
         .modal_image {
-
+            img {
+            width: 90%;
+            border-radius: 5px;
+            position: relative;
+            left: 4%;
+            bottom: -23px;
+            }
         }
 
         .modal_description {

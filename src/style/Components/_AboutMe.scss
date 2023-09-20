@@ -1,11 +1,14 @@
 #about_me {
     
+    
+
     .content_about {
         display: flex;
         justify-content: space-evenly;
         background: antiquewhite;
         height: 364px;
         padding: 20px;
+        border-radius: 5px;
 
         .text_about {
             font-size: 16px;
@@ -32,4 +35,5 @@
             border-radius: 90%;
         }
     }
+    
 }

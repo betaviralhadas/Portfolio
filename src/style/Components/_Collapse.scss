@@ -1,5 +1,8 @@
 .collapse {
     padding: 45px 0 45px 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 
     .collapse-header {
         cursor: pointer;
@@ -7,8 +10,17 @@
         justify-content: space-evenly;
         gap: 20px;
         align-items: baseline;
-        background: aqua;
+        background: #66d9ed;
+        border-radius: 5px;
+        width: 500px;
+        
+        
     }
+    :hover {
+        box-shadow: 10px 5px 5px aqua;
+        background-color: aqua;
+    }
+    
 
     .collapse-content {
 

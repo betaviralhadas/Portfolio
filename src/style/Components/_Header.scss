@@ -15,30 +15,33 @@
         }
 
         h1 {
-            color: black;
+            color: aqua;
         }
     }
 
     .navigation {
 
         ul {
-        display: flex;
-        gap: 20px;
-        list-style: none;
+            display: flex;
+            gap: 20px;
+            list-style: none;
 
-        li {
-            font-size: 16px;
-            font-weight: 600;
+            li {
+                font-size: 16px;
+                font-weight: 600;
 
-            :hover {
-                color: #66d9ed;;
+                :hover {
+                    // color: #66d9ed;
+                    color: aqua;
+                    font-weight: 800;
+                    text-shadow: 1px 1px 2px aqua;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: aqua;
+                }
             }
-
-            a {
-                text-decoration: none;
-                color: black;
-            }
-        }
         }
     }
 }
