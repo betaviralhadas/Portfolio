@@ -16,6 +16,7 @@ const Header = () => {
             <nav className="navigation">
                 <ul>
                     <li><a href="#about_me" title="about">About</a></li>
+                    <li><a href="#skills" title="skills">Skills</a></li>
                     <li><a href="#projects" title="projects">Projects</a></li>
                     <li><a href="#contact" title="contact">Contact</a></li>
                 </ul>

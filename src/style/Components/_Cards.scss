@@ -12,8 +12,9 @@
         width: 300px;
         height: 185px;
         position: relative;
-        border: 1px solid;
-        background: linear-gradient(45deg, black, transparent);
+       // background: linear-gradient(45deg, #2c3e50, #66d9ed);
+        background: #316a74;
+        border: 1px solid white;
 
         
 
@@ -38,15 +39,16 @@
 
             .hover_text {
                display: none;
-               align-items: baseline;
-               gap: 7px;
-
-                :hover {
-                    display: flex;
-                }
             }
         }
+    } 
 
-        
+    .card:hover {
+        border: 2px solid aqua;
+        .hover_text{
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+        }
     }
 }

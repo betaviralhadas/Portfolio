@@ -7,7 +7,15 @@ const Form = ({ onSuccess }) => {
     const form_send = useRef()
     const [currentMessage, setCurrentMessage] = useState(false)
 
-    
+    const emailValidation = (email) => {
+        const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        return emailRegex.test(email);
+    }
+
+    const nameValidation = (name) => {
+        const nameRegex = /^[a-zA-Z-\s]+$/
+        return nameRegex.test(name);
+    }
 
 
 
@@ -15,10 +23,11 @@ const Form = ({ onSuccess }) => {
         e.preventDefault();
         const name = document.querySelector("#name_input").value;
         const email = document.querySelector("#email_input").value;
-        if (name === '') {
+
+        if (name === '' || nameValidation(name) === false) {
             document.querySelector('.error_name').innerHTML = "action impossible !"
         }
-        else if (email === '') {
+        else if (email === '' || emailValidation(email) === false) {
             document.querySelector('.error_email').innerHTML = "ffffff"
         }
         else {
@@ -33,11 +42,12 @@ const Form = ({ onSuccess }) => {
                 })
         }
     }
+    
 
     return (
         <div id="contact">
             <h2 className="form_title">Got a question or proposal?</h2>
-            <h3>Send me un email...</h3>
+            <h3 className="form_subtitle">Send me un email...</h3>
             <form className="form" ref={form_send} onSubmit={configurationEmail}>
                 <div className="form_fields">
                     <label htmlFor="name">Name</label>
@@ -46,14 +56,17 @@ const Form = ({ onSuccess }) => {
                 </div>
                 <div className="form_fields">
                     <label htmlFor="email">Email</label>
-                    <input id="email_input" type="text" name="email" />
+                    <input id="email_input" type="text" name="email" placeholder="Enter your email" />
                     <span className="error_email"></span>
                 </div>
                 <div className="form_message_field">
                     <label htmlFor="message">Message</label>
-                    <textarea type="text" name="message" />
+                    <textarea className="message" type="text" name="message" placeholder="Enter your message" />
                 </div>
-                <button className="button" type="submit">Send</button>
+                <div className="buttons">
+                    <button className="button" type="submit">Send</button>
+                    <button className="button" type="reset">Cancel</button>
+                </div>
             </form>
         </div>
     )

@@ -1,12 +1,14 @@
 :root {
-  --main-color: #00abf0;
+  --main-color: #075040;
 }
 
 #contact {
   margin: 45px 0 56px 0;
+  padding-top: 20px;
   width: 100%;
-  background: radial-gradient(black, transparent);
- 
+  // background: radial-gradient(#2980b9, #2c3e50);
+  background: #1e7676;
+
 
   .form_title {
     margin-left: 131px;
@@ -14,7 +16,7 @@
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-image: linear-gradient(var(--main-color), aqua);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -35rem 0;
@@ -29,8 +31,6 @@
     position: absolute;
     top: 0;
     left: 0;
-
-
     height: 100%;
     border-right: 2px solid var(--main-color);
     z-index: -1;
@@ -38,10 +38,12 @@
     animation-delay: 2s;
   }
 
-  h3 {
+  .form_subtitle {
     margin-left: 179px;
+    // color: deepskyblue;
+    color: #e4efef;
+    font-size: 24px;
   }
-
 
   .form {
     display: flex;
@@ -50,25 +52,32 @@
     align-items: center;
     padding-bottom: 35px;
 
-
     .form_fields {
       display: flex;
       flex-direction: column;
       width: 30%;
-      line-height: 30px;
-      color: deepskyblue;
-      font-weight: 700;
-      font-size: 20px;
+      color: #e4efef;
+      font-weight: 600;
+      font-size: 18px;
+
+
 
       input {
         border-radius: 6px;
         height: 20px;
+        border: 0;
+
       }
 
-      .error_name, .error_email {
+      input:hover {
+        font-size: 16px;
+      }
+
+      .error_name,
+      .error_email {
         color: red;
         font-size: 14px;
-    font-weight: 500;
+        font-weight: 500;
       }
     }
 
@@ -76,21 +85,49 @@
       display: flex;
       flex-direction: column;
       width: 30%;
-      line-height: 30px;
-      color: deepskyblue;
-      font-weight: 700;
-      font-size: 20px;
+      color: #e4efef;
+      font-weight: 600;
+      font-size: 18px;
 
-      input {
+
+
+      .message {
         border-radius: 6px;
-        height: 95px;
+        height: 100px;
+      }
+
+      .message:hover {
+        font-size: 16px;
       }
     }
 
-    .button {
-      cursor: pointer;
-      width: 50px;
-      border-radius: 8px;
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+
+      .button {
+        cursor: pointer;
+        width: 76px;
+        border-radius: 8px;
+        margin-top: 20px;
+        background: aqua;
+        padding: 4px;
+        border: 1px solid aqua;
+        // color: darkslategrey;
+        color: #e4efef;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .button:hover {
+        box-shadow: 3px 3px 3px aqua;
+        background-color: aqua;
+        width: 70px;
+        font-weight: 800;
+        font-size: 18px;
+        // text-shadow: #240316;
+      }
     }
   }
 }

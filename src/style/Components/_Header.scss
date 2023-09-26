@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    border-radius: 0 0 15px 15px;
+    background: #316a74;
 
     .name_photo {
         display: flex;
@@ -15,31 +17,38 @@
         }
 
         h1 {
-            color: aqua;
+            color: white;
         }
     }
 
     .navigation {
+      //  background: #424141;
+      //  background: #316a74;
+        background: #2b383c;
+        height: 50px;
+    border-radius: 15px;
 
         ul {
             display: flex;
             gap: 20px;
             list-style: none;
+            padding-right: 15px;
+    padding-left: 15px;
 
             li {
                 font-size: 16px;
-                font-weight: 600;
+                font-weight: 400;
 
                 :hover {
                     // color: #66d9ed;
                     color: aqua;
-                    font-weight: 800;
+                    font-weight: 600;
                     text-shadow: 1px 1px 2px aqua;
                 }
 
                 a {
                     text-decoration: none;
-                    color: aqua;
+                    color: white;
                 }
             }
         }

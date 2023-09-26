@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import data from '../components/Skills.json';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -7,6 +7,9 @@ import '../style/Components/_Skills.scss';
 const Slider = () => {
   return (
     <>
+      
+        <h2 className='skills_title'>Skills</h2>
+      
       {data && data.length > 0 && (
         <Carousel
           additionalTransfrom
@@ -62,10 +65,11 @@ const Slider = () => {
           sliderClass=""
           slidesToSlide={1}
           swipeable
-          
         >
+          
+          
           {data.map(item => (
-            <div id="skills" className="content_skills skills" key={item.id}>
+            <div className="content_skills skills" key={item.id}>
               <img className="icon_skill" src={item.image} alt="skills" />
             </div>
           ))}

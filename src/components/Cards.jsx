@@ -6,6 +6,7 @@ import ContentModal from "../containers/ContentModal";
 import '../style/Components/_Cards.scss';
 
 const Cards = () => {
+
     return (
         <section>
             <div className="cards">

@@ -22,6 +22,12 @@ $breakpoints: (
         @content;
     }
 }
+#skills {
+
+    .skills_title {
+        text-align: center;
+        color: aqua;
+    }
 
 .skills {
     display: flex;
@@ -30,6 +36,14 @@ $breakpoints: (
     gap: 20px;
     margin-bottom: 25px;
     margin-top: 25px;
+    width: 50%;
+    animation: defil 10s infinite linear;
+
+    @include mobile-only {
+        margin-left: 4em;
+        width: 35%;
+    }
+    
 
     .content_skills {
         display: flex;
@@ -42,6 +56,8 @@ $breakpoints: (
         }
     }
 }
+}
+
 
 @keyframes defil {
     0% {
@@ -52,16 +68,6 @@ $breakpoints: (
     100% {
         transform: translateX(-520px);
         /* position finale à gauche */
-    }
-}
-
-.skills {
-    width: 50%;
-    animation: defil 10s infinite linear;
-
-    @include mobile-only {
-        margin-left: 4em;
-        width: 35%;
     }
 }
 

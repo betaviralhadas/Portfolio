@@ -13,12 +13,14 @@
         background: #66d9ed;
         border-radius: 5px;
         width: 500px;
-        
-        
+        color: white;
+        font-size: 18px;
     }
-    :hover {
+    .collapse-header:hover {
         box-shadow: 10px 5px 5px aqua;
         background-color: aqua;
+        font-weight: 600;
+        font-size: 20px;
     }
     
 

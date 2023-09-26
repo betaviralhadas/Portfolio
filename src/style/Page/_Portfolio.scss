@@ -1,9 +1,17 @@
 #root {
-    background: linear-gradient(#0F2027, #203A43, #2C5364);
+  //  background: linear-gradient(#0F2027, #203A43, #2C5364);
+   // background: #6f8993;
+    background: #2b383c;
+    font-family: 'Montserrat', sans-serif;
 }
 #projects {
     flex-direction: column;
     display: flex;
     align-items: center;
     gap: 20px;
+    margin: 40px 0 75px 0;
+
+    .title_projects {
+        color: aqua;
+    }
 }

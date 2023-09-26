@@ -10,7 +10,7 @@ const ContentModal = ({project}) => {
             <div className="modal_description">
                 <h2>Description</h2>
                 <div className="description_text">
-                    {project.description}
+                    {project.description}<br></br>{project.languages}
                 </div>
                 <button className="button_github" onClick={()=> window.open(project.gitHubLink,"_blank")}>
                     See the code

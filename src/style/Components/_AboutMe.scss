@@ -1,11 +1,9 @@
 #about_me {
-    
-    
 
     .content_about {
         display: flex;
         justify-content: space-evenly;
-        background: antiquewhite;
+        background: #b9e4eb;
         height: 364px;
         padding: 20px;
         border-radius: 5px;
@@ -14,17 +12,24 @@
             font-size: 16px;
             text-align: justify;
             width: 50%;
+            color: darkslategrey;
         }
 
         .cv_button {
             cursor: pointer;
             position: absolute;
             top: 843px;
+            color: darkslategrey;
+            background: aqua;
+            border-radius: 6px;
+            border: 1px solid;
+            font-weight: 600;
+            height: 20px;
 
             :hover {
-            //  transform: scale(1);
-           // translate: 30px;
-              //  text-shadow: 20px;
+                //  transform: scale(1);
+                // translate: 30px;
+                //  text-shadow: 20px;
             }
         }
 
@@ -35,5 +40,4 @@
             border-radius: 90%;
         }
     }
-    
 }

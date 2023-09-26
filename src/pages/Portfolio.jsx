@@ -15,9 +15,11 @@ const Portfolio = () => {
             {<Banner />}
             <main>
                 {<AboutMe />}
-                {<Slider />}
+                <section id="skills">
+                    {<Slider />}
+                </section>
                 <section id="projects">
-                    <h2>Projects</h2>
+                    <h2 className="title_projects">Projects</h2>
                     {<Cards />}
                 </section>
                 <Modal 

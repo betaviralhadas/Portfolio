@@ -1,6 +1,6 @@
 .content_footer {
     width: 100%;
-    background: darkcyan;
+    background: #316a74;
     color: white;
 
     .top_button {
@@ -9,14 +9,12 @@
         top: -23px;
         border-radius: 50%;
         border: 0 solid;
-        background: darkcyan;
+        background: #316a74;
         width: 70px;
         height: 60px;
         text-align: center;
 
-        :hover {
-            transform: translateY(10px); 
-           }
+        
 
         a {
             color: white;
@@ -24,7 +22,10 @@
         }
     }
     
-    
+    .top_button:hover {
+        transform: translateY(-7px); 
+        
+       }
 
     .footer_links {
         display: flex;
@@ -33,7 +34,14 @@
 
         a {
             color: white;
+
+            :hover {
+                font-size: 20px;
+                font-weight: 800;
+            }
         }
+
+        
     }
 
     .footer_text {

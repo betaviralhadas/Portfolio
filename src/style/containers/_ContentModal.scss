@@ -3,17 +3,18 @@
     position: absolute;
     width: 652px;
     border-radius: 15px;
-    background: blue;
+    background: white;
     left: 25%;
 
     .close_modal {
+        cursor: pointer;
         position: absolute;
         right: 10px;
         top: 10px;
         border: 0 solid;
-        background: blue;
+        background: white;
         font-size: unset;
-        color: white;
+        color: darkslategrey;
     }
 
     .modal_content {
@@ -24,30 +25,49 @@
 
         .modal_image {
             img {
-            width: 90%;
-            border-radius: 5px;
-            position: relative;
-            left: 4%;
-            bottom: -23px;
+                width: 90%;
+                border-radius: 5px;
+                position: relative;
+                left: 4%;
+                bottom: -23px;
             }
         }
 
         .modal_description {
             display: grid;
+            padding: 22px;
+            color: darkslategrey;
 
             h2 {
                 place-self: center;
             }
 
             .description_text {
-                width: 60%;
+                width: 75%;
                 place-self: center;
                 text-align: center;
+                line-height: 26px;
             }
 
             .button_github {
+                cursor: pointer;
                 width: 62px;
                 place-self: end;
+                color: white;
+                background-color: aqua;
+                border: aqua;
+                border-radius: 10px;
+                height: 39px;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .button_github:hover {
+                width: 70px;
+                box-shadow: 10px 5px 5px aqua;
+                background-color: aqua;
+                font-weight: 700;
+                font-size: 16px;
             }
         }
     }
