@@ -25,10 +25,10 @@ const Form = ({ onSuccess }) => {
         const email = document.querySelector("#email_input").value;
 
         if (name === '' || nameValidation(name) === false) {
-            document.querySelector('.error_name').innerHTML = "action impossible !"
+            document.querySelector('.error_name').innerHTML = "Invalid name"
         }
         else if (email === '' || emailValidation(email) === false) {
-            document.querySelector('.error_email').innerHTML = "ffffff"
+            document.querySelector('.error_email').innerHTML = "Enter a valid email"
         }
         else {
             setCurrentMessage(true);
@@ -61,7 +61,7 @@ const Form = ({ onSuccess }) => {
                 </div>
                 <div className="form_message_field">
                     <label htmlFor="message">Message</label>
-                    <textarea className="message" type="text" name="message" placeholder="Enter your message" />
+                    <textarea className="message" type="text" name="message" placeholder="Enter a message" />
                 </div>
                 <div className="buttons">
                     <button className="button" type="submit">Send</button>

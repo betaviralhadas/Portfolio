@@ -1,9 +1,10 @@
 #root {
-  //  background: linear-gradient(#0F2027, #203A43, #2C5364);
-   // background: #6f8993;
+    //  background: linear-gradient(#0F2027, #203A43, #2C5364);
+    // background: #6f8993;
     background: #2b383c;
     font-family: 'Montserrat', sans-serif;
 }
+
 #projects {
     flex-direction: column;
     display: flex;
@@ -13,5 +14,11 @@
 
     .title_projects {
         color: aqua;
+        font-size: 30px;
     }
+}
+
+.form_modal {
+    text-align: center;
+    color: darkslategray;
 }

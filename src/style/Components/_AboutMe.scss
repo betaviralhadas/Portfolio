@@ -3,7 +3,7 @@
     .content_about {
         display: flex;
         justify-content: space-evenly;
-        background: #b9e4eb;
+        background: white;
         height: 364px;
         padding: 20px;
         border-radius: 5px;
@@ -19,18 +19,20 @@
             cursor: pointer;
             position: absolute;
             top: 843px;
-            color: darkslategrey;
-            background: aqua;
+            color: white;
+            background: #66d9ed;
             border-radius: 6px;
-            border: 1px solid;
+            border: 1px solid transparent;
+            font-size: 16px;
             font-weight: 600;
-            height: 20px;
+            height: 26px;
+        }
 
-            :hover {
-                //  transform: scale(1);
-                // translate: 30px;
-                //  text-shadow: 20px;
-            }
+        .cv_button:hover {
+            box-shadow: 3px 3px 3px aqua;
+            background-color: aqua;
+            font-size: 18px;
+            font-weight: 700;
         }
 
         .photo_about {

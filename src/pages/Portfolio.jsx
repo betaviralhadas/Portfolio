@@ -24,7 +24,7 @@ const Portfolio = () => {
                 </section>
                 <Modal 
                 content={
-                    <div>
+                    <div className="form_modal">
                         <h3>Message sent</h3>
                     </div>
                 }>

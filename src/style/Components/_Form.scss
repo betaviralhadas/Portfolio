@@ -1,14 +1,12 @@
 :root {
-  --main-color: #075040;
+  --main-color: aqua;
 }
 
 #contact {
   margin: 45px 0 56px 0;
   padding-top: 20px;
   width: 100%;
-  // background: radial-gradient(#2980b9, #2c3e50);
   background: #1e7676;
-
 
   .form_title {
     margin-left: 131px;
@@ -16,7 +14,7 @@
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color), aqua);
+    background-image: linear-gradient(var(--main-color), #a9d2e8);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -35rem 0;
@@ -77,7 +75,7 @@
       .error_email {
         color: red;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 600;
       }
     }
 
