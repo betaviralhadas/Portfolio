@@ -3,8 +3,11 @@
     position: absolute;
     width: 652px;
     border-radius: 15px;
-    background: white;
-    left: 25%;
+    background: #ede8ea;
+    
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
     .close_modal {
         cursor: pointer;
@@ -12,7 +15,7 @@
         right: 10px;
         top: 10px;
         border: 0 solid;
-        background: white;
+        background: #ede8ea;
         font-size: unset;
         color: darkslategrey;
     }

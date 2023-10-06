@@ -1,31 +1,38 @@
 .content_footer {
     width: 100%;
-    background: #316a74;
+    background: radial-gradient(circle, rgb(42 69 78) 28%, rgb(37 81 86) 51%, rgba(42, 46, 47, 1) 100%);
     color: white;
 
     .top_button {
         position: relative;
-        left: 47%;
+        left: 48%;
         top: -23px;
         border-radius: 50%;
         border: 0 solid;
-        background: #316a74;
+        background: rgb(42 69 78);
         width: 70px;
         height: 60px;
         text-align: center;
 
-        
+        @media screen and (max-width:767px) {
+            left: 41%;
+            height: 50px;
+            margin-bottom: -14px;
+        }
 
         a {
             color: white;
             font-size: xx-large;
         }
     }
-    
+
     .top_button:hover {
-        transform: translateY(-7px); 
-        
-       }
+        transform: translateY(-7px);
+
+        .top {
+            color: aqua;
+        }
+    }
 
     .footer_links {
         display: flex;
@@ -36,12 +43,10 @@
             color: white;
 
             :hover {
-                font-size: 20px;
+                font-size: 25px;
                 font-weight: 800;
             }
         }
-
-        
     }
 
     .footer_text {
@@ -49,5 +54,9 @@
         justify-content: center;
         align-items: baseline;
         gap: 10px;
+
+        @media screen and (max-width:767px) {
+            font-size: 14px;
+        }
     }
 }

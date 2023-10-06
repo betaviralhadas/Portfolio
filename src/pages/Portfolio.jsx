@@ -1,16 +1,14 @@
 import React from "react";
 import AboutMe from "../components/AboutMe";
 import Banner from "../components/Banner";
-
 import Cards from "../components/Cards";
 import Form from "../components/Form";
 import '../style/Page/_Portfolio.scss';
-import Modal from "../containers/Modal";
+import FormModal from "../containers/FormModal";
 import Slider from "../components/Slider";
 
-
 const Portfolio = () => {
-    return(
+    return (
         <>
             {<Banner />}
             <main>
@@ -22,15 +20,16 @@ const Portfolio = () => {
                     <h2 className="title_projects">Projects</h2>
                     {<Cards />}
                 </section>
-                <Modal 
-                content={
-                    <div className="form_modal">
-                        <h3>Message sent</h3>
-                    </div>
-                }>
+                <FormModal
+                    content={
+                        <section className="message_sent">
+                            <h3>Message sent</h3>
+                            <i class="fa-regular fa-circle-check"></i>
+                        </section>
+                    }>
                     {({ setisOpened }) => (
-                    <Form onSuccess={()=> setisOpened(true)} />)}
-                </Modal>
+                        <Form onSuccess={() => setisOpened(true)} />)}
+                </FormModal>
             </main>
         </>
     )

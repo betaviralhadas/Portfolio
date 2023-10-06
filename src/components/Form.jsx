@@ -17,12 +17,10 @@ const Form = ({ onSuccess }) => {
         return nameRegex.test(name);
     }
 
-
-
     const configurationEmail = async (e) => {
         e.preventDefault();
-        const name = document.querySelector("#name_input").value;
-        const email = document.querySelector("#email_input").value;
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
 
         if (name === '' || nameValidation(name) === false) {
             document.querySelector('.error_name').innerHTML = "Invalid name"
@@ -42,7 +40,6 @@ const Form = ({ onSuccess }) => {
                 })
         }
     }
-    
 
     return (
         <div id="contact">
@@ -51,17 +48,17 @@ const Form = ({ onSuccess }) => {
             <form className="form" ref={form_send} onSubmit={configurationEmail}>
                 <div className="form_fields">
                     <label htmlFor="name">Name</label>
-                    <input id="name_input" type="text" name="name" placeholder="Enter your name" />
+                    <input className="form_control" id="name" type="text" name="name" placeholder="Enter your name" required />
                     <span className="error_name"></span>
                 </div>
                 <div className="form_fields">
                     <label htmlFor="email">Email</label>
-                    <input id="email_input" type="text" name="email" placeholder="Enter your email" />
+                    <input id="email" type="text" name="email" placeholder="Enter your email" />
                     <span className="error_email"></span>
                 </div>
                 <div className="form_message_field">
                     <label htmlFor="message">Message</label>
-                    <textarea className="message" type="text" name="message" placeholder="Enter a message" />
+                    <textarea className="message" id="message" type="text" name="message" placeholder="Enter a message" />
                 </div>
                 <div className="buttons">
                     <button className="button" type="submit">Send</button>

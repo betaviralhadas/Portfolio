@@ -6,7 +6,9 @@
   margin: 45px 0 56px 0;
   padding-top: 20px;
   width: 100%;
-  background: #1e7676;
+ // background: #1e7676;
+ // background: radial-gradient(circle, rgba(161,43,223,1) 8%, rgb(5 19 187) 100%);
+ background: linear-gradient(0deg, rgba(46,46,54,1) 10%, rgba(29 195 233) 52%, rgba(46,46,54,1) 87%);
 
   .form_title {
     margin-left: 131px;
@@ -22,6 +24,12 @@
     animation-delay: 2s;
     position: relative;
     width: 34.8rem;
+
+    @media screen and (max-width:767px) {
+      width: 300px;
+      margin-left: 10px;
+      font-size: 26px;
+    }
   }
 
   .form_title::before {
@@ -41,6 +49,11 @@
     // color: deepskyblue;
     color: #e4efef;
     font-size: 24px;
+
+    @media screen and (max-width:767px) {
+      margin-left: 24px;
+      font-size: 20px;
+    }
   }
 
   .form {
@@ -58,7 +71,11 @@
       font-weight: 600;
       font-size: 18px;
 
-
+      @media screen and (max-width:767px) {
+        font-size: 16px;
+        width: 45%
+        
+      }
 
       input {
         border-radius: 6px;
@@ -87,7 +104,10 @@
       font-weight: 600;
       font-size: 18px;
 
-
+      @media screen and (max-width:767px) {
+        font-size: 16px;
+        width: 45%
+      }
 
       .message {
         border-radius: 6px;
@@ -104,6 +124,10 @@
       display: flex;
       gap: 20px;
 
+      @media screen and (max-width:767px) {
+        gap: 10px;
+      }
+
       .button {
         cursor: pointer;
         width: 76px;
@@ -116,6 +140,13 @@
         color: #e4efef;
         font-weight: 600;
         font-size: 18px;
+
+        @media screen and (max-width:767px) {
+          width: 60px;
+          margin-top: 5px;
+          padding: 2px;
+          font-size: 16px;
+        }
       }
 
       .button:hover {
@@ -124,7 +155,7 @@
         width: 70px;
         font-weight: 800;
         font-size: 18px;
-        // text-shadow: #240316;
+       // text-shadow: red;
       }
     }
   }

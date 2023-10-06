@@ -9,7 +9,7 @@ const Header = () => {
                 <img
                     className="profile_photo"
                     src={profilePhoto}
-                    alt="elisabete"
+                    alt="elisabeteViralhadas"
                 />
                 <h1>Elisabete Viralhadas</h1>
             </div>

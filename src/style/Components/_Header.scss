@@ -3,7 +3,16 @@
     justify-content: space-between;
     padding: 20px;
     border-radius: 0 0 15px 15px;
-    background: #316a74;
+   // background: #316a74;
+    background: #262525;
+    align-items: center;
+    position: fixed;
+    width: 97%;
+    z-index: 1;
+
+    @media screen and (max-width:767px) {
+        height: 58px;
+      }
 
     .name_photo {
         display: flex;
@@ -14,17 +23,23 @@
             width: 50px;
             height: 50px;
             border-radius: 25px;
+
+            @media screen and (max-width:767px) {
+                width: 40px;
+                height: 40px;
+              }
         }
 
         h1 {
             color: white;
+            font-size: 20px;
         }
     }
 
     .navigation {
       //  background: #424141;
       //  background: #316a74;
-        background: #2b383c;
+       // background: #2b383c;
         height: 50px;
     border-radius: 15px;
 

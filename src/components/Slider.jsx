@@ -7,9 +7,8 @@ import '../style/Components/_Skills.scss';
 const Slider = () => {
   return (
     <>
-      
-        <h2 className='skills_title'>Skills</h2>
-      
+      <h2 className='skills_title'>Skills</h2>
+
       {data && data.length > 0 && (
         <Carousel
           additionalTransfrom
@@ -23,7 +22,7 @@ const Slider = () => {
           focusOnSelect={false}
           infinite={true}
           /*customTransition="translateX(-320px) 10s infinite linear"*/
-          transitionDuration={500}
+          transitionDuration={1500}
           itemClass=""
           keyBoardControl
           minimumTouchDrag={80}
@@ -66,8 +65,7 @@ const Slider = () => {
           slidesToSlide={1}
           swipeable
         >
-          
-          
+
           {data.map(item => (
             <div className="content_skills skills" key={item.id}>
               <img className="icon_skill" src={item.image} alt="skills" />
@@ -78,5 +76,4 @@ const Slider = () => {
     </>
   );
 };
-
 export default Slider;

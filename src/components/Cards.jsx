@@ -6,9 +6,8 @@ import ContentModal from "../containers/ContentModal";
 import '../style/Components/_Cards.scss';
 
 const Cards = () => {
-
     return (
-        <section>
+        <>
             <div className="cards">
                 {data.map((project) => (
                     <Modal key={project.id} content={<ContentModal project={project} />}>
@@ -31,7 +30,7 @@ const Cards = () => {
                     </Modal>
                 ))}
             </div>
-        </section>
+        </>
     )
 }
 export default Cards;

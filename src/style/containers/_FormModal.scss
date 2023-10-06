@@ -1,0 +1,32 @@
+.modal_form {
+    z-index: 1;
+    position: absolute;
+    background: #ede8ea;
+    width: 408px;
+    border-radius: 15px;
+    border: 1px solid seagreen;
+    left: 50%;
+    bottom: -562%;
+    transform: translate(-50%, -50%);
+
+    .close_modal {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: 0 solid;
+        background: #ede8ea;
+        font-size: unset;
+        color: darkslategrey;
+    }
+
+    .message_sent {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 10px;
+        font-size: 20px;
+        text-align: center;
+        color: seagreen;
+    }
+}

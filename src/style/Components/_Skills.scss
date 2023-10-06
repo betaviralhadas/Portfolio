@@ -24,12 +24,16 @@ $breakpoints: (
 }
 
 #skills {
-    margin-top: 45px;
+    margin-top: 50px;
 
     .skills_title {
         font-size: 30px;
         text-align: center;
         color: aqua;
+
+        @media screen and (max-width:767px) {
+            font-size: 26px;
+          }
     }
 
     .skills {
