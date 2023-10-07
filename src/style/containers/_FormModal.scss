@@ -9,6 +9,12 @@
     bottom: -562%;
     transform: translate(-50%, -50%);
 
+    @media screen and (max-width:767px) {
+        width: 256px;
+        bottom: -2577px;
+        height: 53px;
+    }
+
     .close_modal {
         cursor: pointer;
         position: absolute;
@@ -18,6 +24,12 @@
         background: #ede8ea;
         font-size: unset;
         color: darkslategrey;
+
+        @media screen and (max-width:767px) {
+            font-size: 14px;
+            top: 6px;
+            right: 6px;
+        }
     }
 
     .message_sent {
@@ -28,5 +40,9 @@
         font-size: 20px;
         text-align: center;
         color: seagreen;
+
+        @media screen and (max-width:767px) {
+            font-size: 14px;
+        }
     }
 }
