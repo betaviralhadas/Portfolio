@@ -1,18 +1,20 @@
-#top {
+.header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     border-radius: 0 0 15px 15px;
-   // background: #316a74;
     background: #262525;
     align-items: center;
     position: fixed;
     width: 97%;
-    z-index: 1;
+    z-index: 100;
 
     @media screen and (max-width:767px) {
-        height: 58px;
-      }
+        height: 29px;
+        width: 90%;
+       
+    
+    }
 
     .name_photo {
         display: flex;
@@ -27,35 +29,73 @@
             @media screen and (max-width:767px) {
                 width: 40px;
                 height: 40px;
-              }
+            }
         }
 
         h1 {
             color: white;
             font-size: 20px;
+
+            @media screen and (max-width:767px) {
+            width: 120px;
+            }
         }
     }
 
     .navigation {
-      //  background: #424141;
-      //  background: #316a74;
-       // background: #2b383c;
         height: 50px;
-    border-radius: 15px;
+        border-radius: 15px;
 
-        ul {
+        @media screen and (max-width:767px) {
+            height: 16px;
+        }
+
+        .mobile-menu-button {
+            display: none;
+
+            @media screen and (max-width:767px) {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 5px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .bars {
+
+                @media screen and (max-width:767px) {
+                   // margin-right: 20px;
+
+                    
+                }
+            }
+
+            .bars:hover {
+                color: aqua;
+            }
+        }
+
+        .nav_ul {
             display: flex;
             gap: 20px;
             list-style: none;
             padding-right: 15px;
-    padding-left: 15px;
+            padding-left: 15px;
 
-            .bars {
-                display: none;
-
-                @media screen and (max-width:767px) {
-                    display: contents;
-                }
+            @media screen and (max-width:767px) {
+                flex-direction: column;              
+                z-index: 10;
+                padding-left: 0;
+                padding-right: 0;
+                gap: 4px;
+                border: 1px solid aqua;
+                border-radius: 5px;
+                margin-top: 0;
+    padding: 4px;
+    box-shadow: 5px aqua;
+    box-shadow: 4px 5px 19px 3px #45F0FF;
+    font-size: -33px;
+    width: 67px;
             }
 
             li {
@@ -63,7 +103,9 @@
                 font-weight: 400;
 
                 @media screen and (max-width:767px) {
-                    display: none;
+                   // display: none;
+                   display: block;
+                   font-size: 12px;
                 }
 
                 :hover {

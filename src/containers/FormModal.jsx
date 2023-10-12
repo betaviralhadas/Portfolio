@@ -13,9 +13,11 @@ const FormModal = ({ opened, content, children }) => {
             {children({ isOpened, setisOpened })}
             {
                 isOpened && (
+                    <div>
                     <div className="modal_form">
                         <button className="close_modal" onClick={() => setisOpened(false)}>X</button>
                         {content}
+                    </div>
                     </div>
                 )
             }

@@ -10,7 +10,9 @@ import Slider from "../components/Slider";
 const Portfolio = () => {
     return (
         <>
-            {<Banner />}
+            <section id="top">
+                {<Banner />}
+            </section>
             <main>
                 {<AboutMe />}
                 <section id="skills">

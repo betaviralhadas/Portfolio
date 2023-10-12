@@ -39,7 +39,7 @@
         "id": 5,
         "title": "Kasa",
         "description": "Kasa is one of the leaders in private apartment rental in France. The project was to develop its new web platform.",
-        "languages":  "To carry out the project, I used JavaScript, React ans Sass languages.",
+        "languages":  "To carry out the project, I used JavaScript, React and Sass languages.",
         "gitHubLink": "https://github.com/betaviralhadas/kasa.git",
         "coverImage": "/projectsImg/kasa.webp",
         "image": "/projectsImg/kasa_2.webp"

@@ -15,15 +15,15 @@ const Slider = () => {
           arrows
           autoPlaySpeed={1000}
           centerMode={false}
-          className=""
+          
           containerClass="carousel-container"
-          dotListClass=""
+          
           draggable={true}
           focusOnSelect={false}
           infinite={true}
-          /*customTransition="translateX(-320px) 10s infinite linear"*/
+          
           transitionDuration={1500}
-          itemClass=""
+          
           keyBoardControl
           minimumTouchDrag={80}
           pauseOnHover
@@ -36,7 +36,7 @@ const Slider = () => {
                 max: 3000,
                 min: 1024,
               },
-              items: 5,
+              items: 4,
               partialVisibilityGutter: 40,
             },
             mobile: {
@@ -44,7 +44,7 @@ const Slider = () => {
                 max: 464,
                 min: 0,
               },
-              items: 1.5,
+              items: 2,
               partialVisibilityGutter: 30,
             },
             tablet: {
@@ -52,7 +52,7 @@ const Slider = () => {
                 max: 1024,
                 min: 464,
               },
-              items: 4,
+              items: 3,
               partialVisibilityGutter: 30,
             },
           }}
@@ -61,7 +61,7 @@ const Slider = () => {
           rtl={false}
           shouldResetAutoplay
           showDots={false}
-          sliderClass=""
+          
           slidesToSlide={1}
           swipeable
         >

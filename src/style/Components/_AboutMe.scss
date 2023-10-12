@@ -9,14 +9,31 @@
         display: flex;
         justify-content: space-evenly;
         background: #ede8ea;
-        height: 388px;
+        height: auto;
         padding: 20px;
         border-radius: 5px;
+
+        @media screen and (max-width:767px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+        flex-direction: column-reverse;
+        }
 
         .content1 {
             display: flex;
             flex-direction: column;
             width: 50%;
+
+            @media screen and (max-width:767px) {
+                width: 100%;
+            }
+
+            @media screen and (min-width:768px) and (max-width:992px) {
+                width: 95%;
+            }
 
             .text_about {
                 font-size: 16px;
@@ -24,25 +41,31 @@
                 text-align: justify;
                 color: darkslategrey;
 
-                
+
                 /* Animação de máquina de escrever */
-                    overflow: hidden;
-                    /* Para esconder o texto que ainda não foi digitado */
-                  //  display: inline-block;
-                    /* Permite animar o tamanho (largura) */
-                    //  white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
-                  //  border-right: 2px solid;
-                   // animation: typing 5s forwards;
-                
+                overflow: hidden;
+                /* Para esconder o texto que ainda não foi digitado */
+                //  display: inline-block;
+                /* Permite animar o tamanho (largura) */
+                //  white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+                //  border-right: 2px solid;
+                // animation: typing 5s forwards;
+                @media screen and (max-width:767px) {
+                    font-size: 14px;
+                }
+
+                @media screen and (min-width:768px) and (max-width:992px) {
+                    font-size: 14px;
+                }
             }
 
             .cv_button {
                 cursor: pointer;
                 width: 120px;
                 margin-left: 184px;
-    margin-top: 6px;
-               // position: absolute;
-//top: 843px;
+                margin-top: 6px;
+                // position: absolute;
+                //top: 843px;
                 //  color: white;
                 //  background: #66d9ed;
                 border-radius: 15px;
@@ -66,6 +89,18 @@
 
         .content2 {
 
+            @media screen and (max-width:767px) {
+                display: flex;
+                gap: 59px;
+            }
+
+            @media screen and (min-width:768px) and (max-width:992px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 115px;
+            }
 
             .photo_about {
                 width: 200px;
@@ -75,13 +110,18 @@
 
                 @media screen and (max-width:767px) {
                     width: 90px;
-                height: 100px;
+                    height: 100px;
+                }
+
+                @media screen and (min-width:768px) and (max-width:992px) {
+                    width: 150px;
+                    height: 200px;
                 }
             }
 
             h3 {
                 font-style: italic;
-    color: darkslategray;
+                color: darkslategray;
             }
         }
     }
