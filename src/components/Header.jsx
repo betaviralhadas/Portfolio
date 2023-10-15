@@ -21,13 +21,12 @@ const Header = () => {
                 <h1>Elisabete Viralhadas</h1>
             </div>
             <nav className={`navigation ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-                {window.innerWidth <= 767 && ( // Verifique se a largura da tela é menor ou igual a 767 pixels
+                {window.innerWidth <= 767 && (
                     <div className="mobile-menu-button" onClick={toggleMobileMenu}>
                         <i className="fa-solid fa-bars bars"></i>
                     </div>
-
                 )}
-                {window.innerWidth <= 767 && isMobileMenuOpen && ( // Verifique se a largura da tela é menor ou igual a 767 pixels e o menu móvel está aberto
+                {window.innerWidth <= 767 && isMobileMenuOpen && (
                     <ul className={`nav_ul ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
                         <li><a href="#about_me" title="about">About</a></li>
                         <li><a href="#skills" title="skills">Skills</a></li>
@@ -36,14 +35,14 @@ const Header = () => {
                     </ul>
                 )}
 
-                {window.innerWidth > 767 && !isMobileMenuOpen && ( 
+                {window.innerWidth > 767 && !isMobileMenuOpen && (
                     <ul className={`nav_ul ${isMobileMenuOpen ? '' : 'mobile-open'}`}>
                         <li><a href="#about_me" title="about">About</a></li>
                         <li><a href="#skills" title="skills">Skills</a></li>
                         <li><a href="#projects" title="projects">Projects</a></li>
                         <li><a href="#contact" title="contact">Contact</a></li>
                     </ul>
-                )}               
+                )}
             </nav>
         </section>
     )

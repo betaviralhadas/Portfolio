@@ -1,5 +1,4 @@
 import React from "react";
-
 import data from '../components/Data.json';
 import Modal from '../containers/Modal';
 import ContentModal from "../containers/ContentModal";

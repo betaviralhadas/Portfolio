@@ -1,98 +1,137 @@
-.modal_window {
-    z-index: 1;
-    position: absolute;
-    width: 652px;
-    border-radius: 15px;
-    background: #ede8ea;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // pointer-events: none; /* impede a interação com o conteúdo do site */
 
-    @media screen and (max-width:767px) {
-        width: 332px;
-    }
 
-    .close_modal {
-        cursor: pointer;
+
+    .modal_window {
+        z-index: 1;
         position: absolute;
-        right: 10px;
-        top: 10px;
-        border: 0 solid;
-        background: #ede8ea;
-        font-size: unset;
-        color: darkslategrey;
-    }
+        width: 652px;
+        border-radius: 15px;
+        // background: #ede8ea;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid aqua;
+        box-shadow: -2px 2px 26px aqua;
+        background: #253c3e;
 
-    .modal_content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-
-        .modal_image {
-            img {
-                width: 90%;
-                border-radius: 5px;
-                position: relative;
-                left: 4%;
-                bottom: -23px;
-            }
+        @media screen and (max-width:767px) {
+            width: 332px;
         }
 
-        .modal_description {
-            display: grid;
-            padding: 22px;
-            color: darkslategrey;
+        .close_modal {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border: 0 solid;
+            background: #ede8ea;
+            font-size: unset;
+            color: white;
+            background: #253c3e;
+        }
 
-            h2 {
-                place-self: center;
+        .close_modal:hover {
+            font-weight: 700;
+            font-size: 18px;
+        }
 
-                @media screen and (max-width:767px) {
-                    font-size: 18px;
+        .modal_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+
+            .modal_image {
+                img {
+                    width: 90%;
+                    border-radius: 5px;
+                    position: relative;
+                    left: 4%;
+                    bottom: -23px;
                 }
             }
 
-            .description_text {
-                width: 75%;
-                place-self: center;
-                text-align: center;
-                line-height: 26px;
-
-                @media screen and (max-width:767px) {
-                    line-height: 22px;
-                    font-size: 16px;
-                    text-align: justify;
-                    width: 102%;
-                }
-            }
-
-            .button_github {
-                cursor: pointer;
-                width: 76px;
-                place-self: end;
+            .modal_description {
+                display: grid;
+                padding: 22px;
+                //  color: darkslategrey;
                 color: white;
-                background-color: aqua;
-                border: aqua;
-                border-radius: 10px;
-                height: 39px;
-                font-weight: 600;
-                font-size: 16px;
 
-                @media screen and (max-width:767px) {
-                    font-size: 14px;
-                    width: 99px;
-                    height: 27px;
+                h2 {
                     place-self: center;
-                    margin-top: 11px;
-                }
-            }
 
-            .button_github:hover {
-                width: 70px;
-                box-shadow: 10px 5px 5px aqua;
-                background-color: aqua;
-                font-weight: 700;
-                font-size: 16px;
+                    @media screen and (max-width:767px) {
+                        font-size: 18px;
+                    }
+
+                    @media screen and (min-width:768px) and (max-width:992px) {
+                        font-size: 20px;
+                    }
+                }
+
+                .description_text {
+                    width: 75%;
+                    place-self: center;
+                    text-align: center;
+                    line-height: 26px;
+
+                    @media screen and (max-width:767px) {
+                        line-height: 22px;
+                        font-size: 16px;
+                        text-align: justify;
+                        width: 102%;
+                    }
+
+                    @media screen and (min-width:768px) and (max-width:992px) {
+                        font-size: 16px;
+                    }
+                }
+
+                .button_github {
+                    cursor: pointer;
+                    width: 76px;
+                    place-self: end;
+                    color: white;
+                    background-color: aqua;
+                    border: aqua;
+                    border-radius: 10px;
+                    height: auto;
+                    font-weight: 600;
+                    font-size: 16px;
+
+                    @media screen and (max-width:767px) {
+                        font-size: 14px;
+                        width: 99px;
+
+                        place-self: center;
+                        margin-top: 11px;
+                    }
+
+                    @media screen and (min-width:768px) and (max-width:992px) {
+                        font-size: 14px;
+                        width: 70px;
+
+                    }
+                }
+
+                .button_github:hover {
+                    box-shadow: 10px 4px 4px aqua;
+                    // box-shadow: 6px 7px 25px 11px aqua;
+                    background-color: aqua;
+                    font-weight: 700;
+                }
             }
         }
     }

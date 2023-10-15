@@ -15,15 +15,11 @@ const Slider = () => {
           arrows
           autoPlaySpeed={1000}
           centerMode={false}
-          
           containerClass="carousel-container"
-          
           draggable={true}
           focusOnSelect={false}
           infinite={true}
-          
           transitionDuration={1500}
-          
           keyBoardControl
           minimumTouchDrag={80}
           pauseOnHover
@@ -61,7 +57,6 @@ const Slider = () => {
           rtl={false}
           shouldResetAutoplay
           showDots={false}
-          
           slidesToSlide={1}
           swipeable
         >

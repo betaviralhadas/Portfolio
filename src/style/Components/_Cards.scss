@@ -5,34 +5,41 @@
     column-gap: 20px;
     row-gap: 52px;
     width: 955px;
-    z-index: 0;
-    opacity: 0;
-   transform: translateY(20px);
+    // z-index: 0;
+    // opacity: 0;
+    transform: translateY(20px);
     animation: card-animation 2s ease-out forwards;
 
     @media screen and (max-width:767px) {
         width: 300px;
         flex-direction: column;
-    row-gap: 20px;
-      }
+        row-gap: 20px;
+    }
 
-      @media screen and (min-width:768px) and (max-width:992px) {
+    @media screen and (min-width:768px) and (max-width:992px) {
         width: 100%;
+        row-gap: 30px;
     }
 
     .card {
         cursor: pointer;
         border-radius: 15px;
         width: 300px;
-        height: 185px;
-       // background: linear-gradient(45deg, #2c3e50, #66d9ed);
-       // background: #316a74;
-       background: #262525;
+        height: 184px;
+        // background: linear-gradient(45deg, #2c3e50, #66d9ed);
+        // background: #316a74;
+        background: #262525;
         border: 1px solid white;
 
         @media screen and (max-width:767px) {
             height: 164px;
-          }
+            width: 260px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            height: 174px;
+            width: 270px;
+        }
 
         .card_img {
             width: 100%;
@@ -47,26 +54,40 @@
             align-items: center;
             padding: 3px 15px 3px 15px;
             color: white;
-                
-            @media screen and (max-width:767px) {
-                font-size: 14px;
-              }
 
             .title {
                 margin: 0;
-                
+
+                @media screen and (max-width:767px) {
+                    font-size: 14px;
+                }
+    
+                @media screen and (min-width:768px) and (max-width:992px) {
+                font-size: 18px;
+                }
             }
 
             .hover_text {
-               display: none;
-               color: aqua;
+                display: none;
+                color: aqua;
+
+                @media screen and (max-width:767px) {
+                   
+                }
+    
+                @media screen and (min-width:768px) and (max-width:992px) {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
             }
         }
-    } 
+    }
 
     .card:hover {
         border: 2px solid aqua;
-        .hover_text{
+        box-shadow: 4px 5px 19px 3px #45F0FF;
+
+        .hover_text {
             display: flex;
             gap: 10px;
             align-items: baseline;
@@ -76,8 +97,8 @@
 
 @keyframes card-animation {
     to {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
 
     }
-  }
+}

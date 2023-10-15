@@ -10,7 +10,6 @@ const Banner = () => {
                 src={imgBanner}
                 alt="banner"
             />
-            <h2>Front-end Developer</h2>
         </div>
     )
 }
