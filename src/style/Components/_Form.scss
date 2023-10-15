@@ -6,8 +6,6 @@
   margin: 45px 0 56px 0;
   padding-top: 20px;
   width: 100%;
-  // background: #1e7676;
-  // background: radial-gradient(circle, rgba(161,43,223,1) 8%, rgb(5 19 187) 100%);
   background: linear-gradient(0deg, rgba(46, 46, 54, 1) 10%, rgba(29 195 233) 52%, rgba(46, 46, 54, 1) 87%);
 
   .form_title {
@@ -27,7 +25,7 @@
 
     @media screen and (max-width:767px) {
       width: 300px;
-      margin-left: 10px;
+      margin-left: 75px;
       font-size: 26px;
     }
 
@@ -55,8 +53,8 @@
     font-size: 24px;
 
     @media screen and (max-width:767px) {
-      margin-left: 24px;
-      font-size: 20px;
+      margin-left: 92px;
+      font-size: 18px;
     }
 
     @media screen and (min-width:768px) and (max-width:992px) {
@@ -94,6 +92,10 @@
         height: 20px;
         border: 0;
 
+        @media screen and (max-width:767px) {
+          height: 18px;
+        }
+
         @media screen and (min-width:768px) and (max-width:992px) {
           height: 18px;
         }
@@ -108,6 +110,10 @@
         color: red;
         font-size: 14px;
         font-weight: 600;
+
+        @media screen and (max-width:767px) {
+          font-size: 12px;
+        }
 
         @media screen and (min-width:768px) and (max-width:992px) {
           font-size: 12px;
@@ -146,12 +152,15 @@
         font-size: 14px;
         font-weight: 500;
 
+        @media screen and (max-width:767px) {
+          font-size: 12px;
+        }
+
         @media screen and (min-width:768px) and (max-width:992px) {
           font-size: 12px;
         }
       }
     }
-
 
     .buttons {
       display: flex;
@@ -162,7 +171,7 @@
       }
 
       @media screen and (min-width:768px) and (max-width:992px) {
-       gap: 15px;
+        gap: 15px;
       }
 
       .button {
@@ -173,21 +182,21 @@
         background: aqua;
         padding: 4px;
         border: 1px solid aqua;
-        // color: darkslategrey;
         color: #e4efef;
         font-weight: 600;
         font-size: 18px;
 
         @media screen and (max-width:767px) {
-          width: 60px;
+          width: 56px;
           margin-top: 5px;
           padding: 2px;
-          font-size: 16px;
+          font-size: 14px;
         }
 
         @media screen and (min-width:768px) and (max-width:992px) {
           font-size: 16px;
           width: 70px;
+          padding: 2px;
         }
       }
 
@@ -197,12 +206,15 @@
         width: 70px;
         font-weight: 800;
         font-size: 18px;
-        // text-shadow: red;
+
+        @media screen and (max-width:767px) {
+          width: 65px;
+          font-size: 17px;
+        }
       }
     }
   }
 }
-
 
 @keyframes homeCursorText {
 

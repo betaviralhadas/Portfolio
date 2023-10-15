@@ -62,7 +62,7 @@ const Slider = () => {
         >
 
           {data.map(item => (
-            <div className="content_skills skills" key={item.id}>
+            <div className="skills" key={item.id}>
               <img className="icon_skill" src={item.image} alt="skills" />
             </div>
           ))}

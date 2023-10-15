@@ -12,7 +12,7 @@ const Collapse = ({ title, description }) => {
     <div className="collapse">
       <div className="collapse-header" onClick={toggleCollapse}>
         {window.innerWidth <= 767 && isOpen && (
-          <div>
+          <div className='collapse_header_mobile'>
             <span style={{ marginTop: isOpen ? '0' : '0' }}>{title}</span>
             <span style={{ display: isOpen ? 'block' : 'block' }} className={` ${isOpen ? 'open' : 'closed'}`}><i className="fa-solid fa-chevron-up arrow"></i></span>
           </div>

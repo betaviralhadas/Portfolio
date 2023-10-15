@@ -39,10 +39,12 @@ const Form = ({ onSuccess }) => {
         .then((rest) => {
           setCurrentMessage(true);
           onSuccess();
+          setTimeout(() => {
           setName("");
           setEmail("");
           setMessage("");
-        })
+        }, 2000); // 2000 milissegundos = 2 segundos de atraso,para limpar os dados dos campos do form apos envio
+      })
         .catch((error) => {
           console.log(error.text);
         });

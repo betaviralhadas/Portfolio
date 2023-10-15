@@ -15,16 +15,19 @@
         text-align: center;
 
         @media screen and (max-width:767px) {
-            left: 41%;
+            left: 42%;
             height: 50px;
+            width: 60px;
             margin-bottom: -14px;
+            top: -17px;
         }
 
         @media screen and (min-width:768px) and (max-width:992px) {
-        left: 46%;
-        top: -18px;
-        width: 65px;
-    height: 55px;
+            left: 46%;
+            top: -18px;
+            width: 65px;
+            height: 55px;
+            margin-bottom: -16px;
         }
 
         a {
@@ -46,12 +49,28 @@
         justify-content: center;
         gap: 20px;
 
+        @media screen and (max-width:767px) {
+            gap: 15px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            gap: 15px;
+        }
+
         a {
             color: white;
 
             :hover {
                 font-size: 25px;
                 font-weight: 800;
+
+                @media screen and (max-width:767px) {
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width:768px) and (max-width:992px) {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -63,11 +82,12 @@
         gap: 10px;
 
         @media screen and (max-width:767px) {
-            font-size: 14px;
+            font-size: 12px;
+            gap: 5px;
         }
 
         @media screen and (min-width:768px) and (max-width:992px) {
-        font-size: 14px;
+            font-size: 14px;
         }
     }
 }
