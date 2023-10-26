@@ -16,8 +16,10 @@ const Portfolio = () => {
             <main>
                 {<AboutMe />}
                 <section id="skills">
+                    <h2 className='skills_title'>Skills</h2>
                     {<Slider />}
                 </section>
+                
                 <section id="projects">
                     <h2 className="title_projects">Projects</h2>
                     {<Cards />}

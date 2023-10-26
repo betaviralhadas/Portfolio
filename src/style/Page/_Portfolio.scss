@@ -3,6 +3,28 @@
     background: #262525;
 }
 
+#skills {
+    margin-top: 50px;
+
+    @media screen and (max-width:767px) {
+        margin-top: 10px;
+    }
+
+    .skills_title {
+        font-size: 30px;
+        text-align: center;
+        color: aqua;
+
+        @media screen and (max-width:767px) {
+            font-size: 24px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            font-size: 26px;
+        }
+    }
+}
+
 #projects {
     flex-direction: column;
     display: flex;

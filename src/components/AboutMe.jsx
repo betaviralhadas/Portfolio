@@ -1,5 +1,5 @@
 import React from "react";
-import photoAboutMe from "../Img/beta.jpg";
+import photoAboutMe from "../Img/beta.webp";
 import '../style/Components/_AboutMe.scss';
 import Collapse from "./Collapse";
 

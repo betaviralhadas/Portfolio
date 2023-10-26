@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../components/Skills.json';
+import data from '../components/skills.json';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../style/Components/_Skills.scss';
@@ -7,8 +7,6 @@ import '../style/Components/_Skills.scss';
 const Slider = () => {
   return (
     <>
-      <h2 className='skills_title'>Skills</h2>
-
       {data && data.length > 0 && (
         <Carousel
           additionalTransfrom

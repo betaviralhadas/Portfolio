@@ -50,9 +50,11 @@
 
     .collapse_header_mobile {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
+        margin-left: -139px;
+        gap: 54px;
     }
 
     .collapse-content {}
