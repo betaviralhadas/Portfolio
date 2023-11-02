@@ -1,146 +1,143 @@
-#about_me {
+.content_about {
+    display: flex;
+    justify-content: space-evenly;
+    background: #ede8ea;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    /* margin-top: 205px;*/
 
     @media screen and (max-width:767px) {
-        display: flex;
-        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .content_about {
+    @media screen and (min-width:768px) and (max-width:992px) {
+        flex-direction: column-reverse;
+    }
+
+    .content1 {
         display: flex;
-        justify-content: space-evenly;
-        background: #ede8ea;
-        height: auto;
-        padding: 20px;
-        border-radius: 5px;
+        flex-direction: column;
+        width: 50%;
 
         @media screen and (max-width:767px) {
-            flex-direction: column-reverse;
-            align-items: center;
+            width: 100%;
         }
 
         @media screen and (min-width:768px) and (max-width:992px) {
-            flex-direction: column-reverse;
+            width: 95%;
         }
 
-        .content1 {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
+        .text_about {
+            font-size: 16px;
+            font-weight: 500;
+            text-align: justify;
+            color: darkslategrey;
+            /* Animação de máquina de escrever */
+            overflow: hidden;
 
+            /* Para esconder o texto que ainda não foi digitado */
+            //  display: inline-block;
+            /* Permite animar o tamanho (largura) */
+            //  white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+            //  border-right: 2px solid;
+            // animation: typing 5s forwards;
             @media screen and (max-width:767px) {
-                width: 100%;
+                font-size: 14px;
             }
 
             @media screen and (min-width:768px) and (max-width:992px) {
-                width: 95%;
-            }
-
-            .text_about {
-                font-size: 16px;
-                font-weight: 500;
-                text-align: justify;
-                color: darkslategrey;
-                /* Animação de máquina de escrever */
-                overflow: hidden;
-
-                /* Para esconder o texto que ainda não foi digitado */
-                //  display: inline-block;
-                /* Permite animar o tamanho (largura) */
-                //  white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
-                //  border-right: 2px solid;
-                // animation: typing 5s forwards;
-                @media screen and (max-width:767px) {
-                    font-size: 14px;
-                }
-
-                @media screen and (min-width:768px) and (max-width:992px) {
-                    font-size: 14px;
-                }
-            }
-
-            .cv_button {
-                cursor: pointer;
-                width: 120px;
-                margin-left: 184px;
-                margin-top: 6px;
-                border-radius: 15px;
-                font-size: 16px;
-                font-weight: 600;
-                height: 26px;
-                color: aqua;
-                background-color: white;
-                border: 2px solid aqua;
-
-                @media screen and (max-width:767px) {
-                    font-size: 14px;
-                    width: 100px;
-                    margin-left: 120px;
-                }
-
-                @media screen and (min-width:768px) and (max-width:992px) {
-                    margin-left: 387px;
-                    margin-top: 0;
-                    width: 104px;
-                    font-size: 14px;
-                }
-            }
-
-            .cv_button:hover {
-                box-shadow: 3px 5px 3px aqua;
-                background-color: aqua;
-                font-size: 18px;
-                font-weight: 700;
-                color: white;
-
-                @media screen and (max-width:767px) {
-                    font-size: 16px;
-                }
-
-                @media screen and (min-width:768px) and (max-width:992px) {
-                    font-size: 16px;
-                }
+                font-size: 14px;
             }
         }
 
-        .content2 {
+        .cv_button {
+            cursor: pointer;
+            width: 120px;
+            margin-left: 184px;
+            margin-top: 6px;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: 600;
+            height: 26px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 24px;
+            color: aqua;
+            background-color: white;
+            border: 2px solid aqua;
 
             @media screen and (max-width:767px) {
-                display: flex;
-                gap: 59px;
+                font-size: 14px;
+                width: 100px;
+                margin-left: 120px;
             }
 
             @media screen and (min-width:768px) and (max-width:992px) {
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: center;
-                align-items: center;
-                gap: 115px;
+                margin-left: 387px;
+                margin-top: 0;
+                width: 104px;
+                font-size: 14px;
+            }
+        }
+
+        .cv_button:hover {
+            box-shadow: 3px 5px 3px aqua;
+            background-color: aqua;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+
+            @media screen and (max-width:767px) {
+                font-size: 16px;
             }
 
-            .photo_about {
-                width: 200px;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 90%;
-
-                @media screen and (max-width:767px) {
-                    width: 90px;
-                    height: 100px;
-                }
-
-                @media screen and (min-width:768px) and (max-width:992px) {
-                    width: 150px;
-                    height: 200px;
-                }
-            }
-
-            h3 {
-                font-style: italic;
-                color: darkslategray;
+            @media screen and (min-width:768px) and (max-width:992px) {
+                font-size: 16px;
             }
         }
     }
+
+    .content2 {
+
+        @media screen and (max-width:767px) {
+            display: flex;
+            gap: 59px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 115px;
+        }
+
+        .photo_about {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 90%;
+
+            @media screen and (max-width:767px) {
+                width: 90px;
+                height: 100px;
+            }
+
+            @media screen and (min-width:768px) and (max-width:992px) {
+                width: 150px;
+                height: 200px;
+            }
+        }
+
+        h3 {
+            font-style: italic;
+            color: darkslategray;
+        }
+    }
 }
+
 
 @keyframes typing {
     from {

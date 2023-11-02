@@ -22,6 +22,7 @@ const Form = ({ onSuccess }) => {
 
   const configurationEmail = async (e) => {
     e.preventDefault();
+    
     if (name === "" || !nameValidation(name)) {
       document.querySelector(".error_name").innerHTML = "Invalid name";
     } else if (email === "" || !emailValidation(email)) {
@@ -52,7 +53,7 @@ const Form = ({ onSuccess }) => {
   };
 
   return (
-    <div id="contact">
+    <div className="contact">
       <h2 className="form_title">Got a question or proposal?</h2>
       <h3 className="form_subtitle">Send me an email...</h3>
       <form className="form" ref={form_send} onSubmit={configurationEmail}>

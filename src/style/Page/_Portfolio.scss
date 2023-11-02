@@ -3,8 +3,21 @@
     background: #262525;
 }
 
+#about_me {
+    height: 50px;
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 #skills {
-    margin-top: 50px;
+    height: 72px;
+}
+
+.skilld {
+   
 
     @media screen and (max-width:767px) {
         margin-top: 10px;
@@ -26,6 +39,10 @@
 }
 
 #projects {
+    height: 50px;
+}
+
+.projects {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -44,6 +61,10 @@
             font-size: 26px;
         }
     }
+}
+
+#contact {
+    height: 50px;
 }
 
 .message_sent {

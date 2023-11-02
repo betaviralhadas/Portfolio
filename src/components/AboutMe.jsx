@@ -5,7 +5,6 @@ import Collapse from "./Collapse";
 
 const AboutMe = () => {
     return (
-        <section id="about_me">
             <Collapse
                 title={<h2>About me</h2>}
                 description={<div className="content_about">
@@ -17,7 +16,7 @@ const AboutMe = () => {
                                 I'm looking forward to facing new challenges and expanding my experience in web development.</p>
                             <p>Languages I speak: Portuguese and French</p>
                         </div>
-                        <button className="cv_button">See the CV</button>
+                        <a type="button" href="../cv_web_developer.pdf" download className="cv_button">See the CV</a>
                     </div>
                     <div className="content2">
                         <img
@@ -29,7 +28,6 @@ const AboutMe = () => {
                     </div>
                 </div>
                 } />
-        </section>
     )
 }
 export default AboutMe;

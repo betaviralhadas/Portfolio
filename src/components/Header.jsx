@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import profilePhoto from "../Img/beta.webp";
 import '../style/Components/_Header.scss';
+import {gsap} from "gsap";
 
 const Header = () => {
 
@@ -14,6 +15,79 @@ const Header = () => {
         setMobileMenuOpen(false);
       };
 
+      useEffect(() => {
+        const closeMenuOnOutsideClick = (e) => {
+            if (isMobileMenuOpen && !e.target.closest('.header')) {
+                setMobileMenuOpen(false);
+            }
+        };
+        window.addEventListener("click", closeMenuOnOutsideClick);
+
+        return () => {
+            window.removeEventListener("click", closeMenuOnOutsideClick);
+        };
+    }, [isMobileMenuOpen]);
+
+    useEffect(() => {
+        const handleWindowResize = () => {
+            if (window.innerWidth > 767) {
+                setMobileMenuOpen(false);
+            }
+        };
+
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
+    const onLoad = ()=>{
+        gsap.timeline().fromTo(".letter",
+        {
+            x:-100,
+            opacity:0,
+        },
+        {
+            x:0,
+            opacity:1,
+            delay:0.6,
+            stagger:0.2,
+        }
+        )
+        /*.to(".title", {
+           
+            y: 0,
+            delay: 0.7,
+        })*/
+        .to(".letter", {
+            margin: "0.7 vw",
+            
+            delay: 0.7,
+            duration: 0.5,
+        })
+        /*.to(".title", {
+           
+            y: 0,
+            delay: 0.7,
+        })*/
+        /* .to(".letter", {
+            margin: "0 vw",
+            
+            delay: 0.7,
+            duration: 0.5,
+        }) */
+        .to(".letter", {
+
+            //x:-titleRef.current.ClientWidth,
+            delay: 0.7,
+            duration: 2,
+            rotate: 360,
+        })
+    }
+
+    useEffect(() =>{
+        onLoad()
+    },[])
+
     return (
         <section className="header">
             <div className="name_photo">
@@ -22,7 +96,27 @@ const Header = () => {
                     src={profilePhoto}
                     alt="elisabeteViralhadas"
                 />
-                <h1>Elisabete Viralhadas</h1>
+                <h1 className="title">
+                    <span className="letter">E</span>
+                    <span className="letter">l</span>
+                    <span className="letter">i</span>
+                    <span className="letter">s</span>
+                    <span className="letter">a</span>
+                    <span className="letter">b</span>
+                    <span className="letter">e</span>
+                    <span className="letter">t</span>
+                    <span className="letter">e </span>
+                    <span className="letter">V</span>
+                    <span className="letter">i</span>
+                    <span className="letter">r</span>
+                    <span className="letter">a</span>
+                    <span className="letter">l</span>
+                    <span className="letter">h</span>
+                    <span className="letter">a</span>
+                    <span className="letter">d</span>
+                    <span className="letter">a</span>
+                    <span className="letter">s</span>
+                </h1>
             </div>
             <nav className={`navigation ${isMobileMenuOpen ? '' : ''}`}>
                 {window.innerWidth <= 767 && (
