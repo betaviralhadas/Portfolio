@@ -49,38 +49,14 @@ const Header = () => {
         {
             x:0,
             opacity:1,
-            delay:0.6,
-            stagger:0.2,
+            delay:0.1,
+            stagger:0.1,
         }
         )
-        /*.to(".title", {
-           
-            y: 0,
-            delay: 0.7,
-        })*/
         .to(".letter", {
             margin: "0.7 vw",
-            
-            delay: 0.7,
-            duration: 0.5,
-        })
-        /*.to(".title", {
-           
-            y: 0,
-            delay: 0.7,
-        })*/
-        /* .to(".letter", {
-            margin: "0 vw",
-            
-            delay: 0.7,
-            duration: 0.5,
-        }) */
-        .to(".letter", {
-
-            //x:-titleRef.current.ClientWidth,
-            delay: 0.7,
-            duration: 2,
-            rotate: 360,
+            delay: 0.1,
+            duration: 0.2,
         })
     }
 

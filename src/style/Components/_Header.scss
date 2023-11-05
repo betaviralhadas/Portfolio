@@ -37,6 +37,7 @@
             width: 50px;
             height: 50px;
             border-radius: 25px;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.1s both;
 
             @media screen and (max-width:767px) {
                 width: 35px;
@@ -64,6 +65,7 @@
     }
 
     .navigation {
+        animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
 
         @media screen and (max-width:767px) {
             height: 16px;
@@ -104,11 +106,13 @@
             li {
                 font-size: 16px;
                 font-weight: 400;
+                
 
                 @media screen and (max-width:767px) {
                     display: block;
                     font-size: 14px;
                     border-bottom: 1px solid white;
+                    text-align: center;
                 }
 
                 @media screen and (min-width:768px) and (max-width:992px) {
@@ -119,9 +123,7 @@
                     text-decoration: none;
                     color: white;
 
-                    @media screen and (max-width:767px) {
-                        margin-left: 4px;
-                    }
+                    
                 }
             }
 
@@ -129,6 +131,7 @@
                 a {
                     color: aqua;
                 }
+
                 color: aqua;
                 font-weight: 600;
                 text-shadow: 1px 1px 2px aqua;
@@ -151,5 +154,20 @@
             width: 354px;
             margin-left: -13px;
         }
+    }
+}
+
+
+@keyframes text-focus-in {
+    0% {
+
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+
+        filter: blur(0px);
+        opacity: 1;
     }
 }

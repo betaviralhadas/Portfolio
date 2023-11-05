@@ -4,7 +4,7 @@ import { Animator, Move, ScrollContainer, ScrollPage } from "react-scroll-motion
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Fade, FadeIn, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, batch } from "react-scroll-motion";
 
-const Fadeup = batch(Fade(), Sticky(), Move())
+//const Fadeup = batch(Fade(), Sticky(), Move())
 
 const Collapse = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +13,11 @@ const Collapse = ({ title, description }) => {
     setIsOpen(!isOpen);
   };
 
+  
+
   return (
-    <ScrollPage page={1}>
-      <Animator animation={Fadeup}>
+    //<ScrollPage page={1}>
+     // <Animator animation={Fadeup}>
         <div className="collapse">
           <div className="collapse-header" onClick={toggleCollapse}>
             <span style={{ marginTop: isOpen ? '171px' : '0' }}>{title}</span>
@@ -30,8 +32,8 @@ const Collapse = ({ title, description }) => {
           </div>
           {isOpen && <div className="collapse-content">{description}</div>}
         </div>
-      </Animator>
-    </ScrollPage >
+     // </Animator>
+   // </ScrollPage >
   );
 };
 export default Collapse;

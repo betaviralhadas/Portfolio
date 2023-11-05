@@ -3,24 +3,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Animator, Move, ScrollContainer, ScrollPage } from "react-scroll-motion";
+import { Fade, FadeIn, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, batch } from "react-scroll-motion";
 import { Link, animateScroll as scroll } from "react-scroll";
-import {
-
-    Fade,
-    FadeIn,
-    MoveIn,
-    MoveOut,
-
-    Sticky,
-    StickyIn,
-    ZoomIn,
-    batch,
-} from "react-scroll-motion";
+import '../style/Page/_Portfolio.scss';
 import AboutMe from "../components/AboutMe";
 import Banner from "../components/Banner";
 import Cards from "../components/Cards";
 import Form from "../components/Form";
-import '../style/Page/_Portfolio.scss';
 import FormModal from "../containers/FormModal";
 import Slider from "../components/Slider";
 
@@ -36,8 +25,8 @@ const Portfolio = () => {
             {
                 opacity: 1,
                 y: 0,
-                delay: delay || 0.4,
-                duration: duration || 0.5,
+                delay: delay || 1.8,
+                duration: duration || 0.6,
                 scrollTrigger: {
                     trigger: elem,
                     start: "top center",
@@ -56,7 +45,7 @@ const Portfolio = () => {
             {
                 opacity: 1,
                 x: 0,
-                delay: delay || 0.4,
+                delay: delay || 0.2,
                 duration: duration || 0.5,
                 scrollTrigger: {
                     trigger: elem,
@@ -68,18 +57,15 @@ const Portfolio = () => {
         )
     }
 
-    /* useEffect(() =>{
-        onLoad()
-    },[]) */
     useEffect(() => {
         sliderInTop("#top")
     }, [])
-    /* useEffect(() =>{
-        sliderInTop("#skills")
-    },[]) */
+
     useEffect(() => {
         sliderInLeft(".projects")
     }, [])
+
+    const Fadeup = batch(Fade(), Sticky(), Move())
 
     return (
         <>
@@ -91,11 +77,15 @@ const Portfolio = () => {
 
                     <div id="about_me"></div>
                     <section>
-                        {<AboutMe />}
+                        <ScrollPage page={1}>
+                            <Animator animation={Fadeup}>
+                                {<AboutMe />}
+                            </Animator>
+                        </ScrollPage >
                     </section>
 
                     <div id="skills"></div>
-                    <section className="skilld">
+                    <section className="skill_content">
                         <h2 className='skills_title'>Skills</h2>
                         {<Slider />}
                     </section>
