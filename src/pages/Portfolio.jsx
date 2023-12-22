@@ -57,6 +57,20 @@ const Portfolio = () => {
         )
     }
 
+   // Adicionar animação "pop-up" aos títulos h2
+   /* useEffect(() => {
+        gsap.from(".titles", {
+            opacity: 0.8,
+            scale: 1.5,
+            duration: 0.5,
+            ease: "power4.out",
+            scrollTrigger: {
+                trigger: ".titles",
+                start: "top 90%", // Ajuste a porcentagem conforme necessário
+            },
+        });
+    }, []);*/
+
     useEffect(() => {
         sliderInTop("#top")
     }, [])
@@ -66,6 +80,8 @@ const Portfolio = () => {
     }, [])
 
     const Fadeup = batch(Fade(), Sticky(), Move())
+
+    
 
     return (
         <>
@@ -86,13 +102,13 @@ const Portfolio = () => {
 
                     <div id="skills"></div>
                     <section className="skill_content">
-                        <h2 className='skills_title'>Skills</h2>
+                        <h2 className='skills_title titles'>Skills</h2>
                         {<Slider />}
                     </section>
 
                     <div id="projects"></div>
-                    <section className="projects">
-                        <h2 className="title_projects">Projects</h2>
+                    <section>
+                        <h2 className="title_projects titles">Projects</h2>
                         {<Cards />}
                     </section>
 

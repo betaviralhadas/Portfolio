@@ -22,13 +22,13 @@ const Form = ({ onSuccess }) => {
 
   const configurationEmail = async (e) => {
     e.preventDefault();
-    
+
     if (name === "" || !nameValidation(name)) {
       document.querySelector(".error_name").innerHTML = "Invalid name";
     } else if (email === "" || !emailValidation(email)) {
       document.querySelector(".error_email").innerHTML = "Enter a valid email";
     } else if (message.length < 20) {
-        document.querySelector(".error_message").innerHTML = "Message should be at least 20 characters long";  
+      document.querySelector(".error_message").innerHTML = "Message should be at least 20 characters long";
     } else {
       await emailJs
         .sendForm(
@@ -41,11 +41,14 @@ const Form = ({ onSuccess }) => {
           setCurrentMessage(true);
           onSuccess();
           setTimeout(() => {
-          setName("");
-          setEmail("");
-          setMessage("");
-        }, 2000); // 2000 milissegundos = 2 segundos de atraso,para limpar os dados dos campos do form apos envio
-      })
+            setName("");
+            setEmail("");
+            setMessage("");
+            document.querySelector(".error_name").innerHTML = "";
+            document.querySelector(".error_email").innerHTML = "";
+            document.querySelector(".error_message").innerHTML = "";
+          }, 1500); // 1500 milissegundos = 1.5 segundos de atraso,para limpar os dados dos campos do form apos envio
+        })
         .catch((error) => {
           console.log(error.text);
         });
@@ -60,7 +63,7 @@ const Form = ({ onSuccess }) => {
         <div className="form_fields">
           <label htmlFor="name">Name</label>
           <input
-           // className="form_control"
+            // className="form_control"
             id="name"
             type="text"
             name="name"
@@ -97,7 +100,7 @@ const Form = ({ onSuccess }) => {
           <span className="error_message"></span>
         </div>
 
-        
+
         <div className="buttons">
           <button className="button" type="submit">
             Send

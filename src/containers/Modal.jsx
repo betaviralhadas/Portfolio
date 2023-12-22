@@ -7,27 +7,33 @@ const Modal = ({ opened, content, children }) => {
 
     const [isOpened, setisOpened] = useState(opened);
 
-    const closeModal = () => {
+    /*const closeModal = () => {
         setisOpened(false);
     };
 
     const handleModalClick = (e) => {
         e.stopPropagation(); // Impede que o clique se propague para o fundo
-    };
+    };*/
+
+    useEffect(() => {
+        setisOpened(opened)
+    }, [opened])
 
     return (
         <>
             {children({ isOpened, setisOpened })}
             {
                 isOpened && (
-                    <div className="overclose" onClick={closeModal}>
-                        <div className="overlay" >
-                            <div id="modal_window" className="modal_window" onClick={handleModalClick}>
-                                <button className="close_modal" onClick={closeModal}>X</button>
+
+                    <div className="overlay" >
+                        <div id="modal_window" className="modal_window">
+                            <div className="content">
+                                <button className="close_modal" onClick={() => setisOpened(false)}>X</button>
                                 {content}
                             </div>
                         </div>
                     </div>
+
                 )
             }
         </>

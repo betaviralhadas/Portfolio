@@ -1,10 +1,37 @@
-import React from "react";
+import React, {useEffect} from "react";
 import data from '../components/Data.json';
 import Modal from '../containers/Modal';
 import ContentModal from "../containers/ContentModal";
 import '../style/Components/_Cards.scss';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 const Cards = () => {
+    const sliderInLeft = (elem, delay, duration) => {
+        gsap.fromTo(
+            elem, {
+            opacity: 0,
+            x: -200,
+        },
+            {
+                opacity: 1,
+                x: 0,
+                delay: delay || 0.2,
+                duration: duration || 0.5,
+                scrollTrigger: {
+                    trigger: elem,
+                    start: "top center",
+                    end: "bottom center"
+                },
+                rotate: 360,
+            }
+        )
+       
+    }
+    useEffect(() => {
+        sliderInLeft(".card")
+    }, [])
     return (
         <>
             <div className="cards">
