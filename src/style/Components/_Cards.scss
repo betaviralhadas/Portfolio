@@ -4,11 +4,11 @@
     justify-content: center;
     column-gap: 20px;
     row-gap: 52px;
-    width: 955px;
+    width: 95%;
     // z-index: 0;
     // opacity: 0;
-    transform: translateY(20px);
-    animation: card-animation 2s ease-out forwards;
+   // transform: translateY(20px);
+   // animation: card-animation 2s ease-out forwards;
 
     @media screen and (max-width:767px) {
         width: 300px;

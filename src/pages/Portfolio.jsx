@@ -107,7 +107,7 @@ const Portfolio = () => {
                     </section>
 
                     <div id="projects"></div>
-                    <section>
+                    <section id="project">
                         <h2 className="title_projects titles">Projects</h2>
                         {<Cards />}
                     </section>
